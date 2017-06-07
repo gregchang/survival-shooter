@@ -20,7 +20,7 @@ public class GameOverManager : MonoBehaviour
 		if (playerHealth.currentHealth <= 0) {
 			anim.SetTrigger ("GameOver");
 
-			if (Input.GetMouseButtonDown (0)) {
+			if (Input.GetKeyDown ("r")) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 			}
 		}
